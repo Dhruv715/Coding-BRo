@@ -1,0 +1,38 @@
+.mytitle{
+    font-family: 'Jersey 20';
+    /* background-color: black; */
+    font-size: 2rem;
+}
+
+.manuitems{
+    font-family: 'Jersey 20';
+}
+.carousel-item img {
+    height: 70vh !important; /* Set your desired height */
+    object-fit: cover; /* Ensure the image covers the entire space */
+    position: relative; /* Ensure the linear gradient is positioned relative to the image */
+}
+
+.carousel-item img::before {
+    content: ""; /* Create a pseudo-element */
+    position: absolute; /* Position the gradient overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(24, 24, 24, 0.7), rgba(24, 24, 24, 0.7)) !important; /* Add your desired linear gradient */
+}
+
+.mytitles {
+    position: relative;
+}
+
+.mytitles::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 5%;
+    height: 2px;
+    background-color: black; /* Adjust the color as needed */
+}
